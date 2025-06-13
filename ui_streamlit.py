@@ -1,6 +1,6 @@
-import sys, pathlib
+from __future__ import sys, pathlib
 sys.path.append(str(pathlib.Path(__file__).resolve().parent.parent))
-from __future__ import annotations
+import annotations
 import tempfile
 import pandas as pd
 from pathlib import Path
