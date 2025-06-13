@@ -1,6 +1,6 @@
 from pathlib import Path
 from typing import List
-from langchain.document_loaders import BSHTMLLoader
+from langchain_community.document_loaders import BSHTMLLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.schema import Document
 
