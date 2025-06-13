@@ -1,11 +1,12 @@
-from __future__ import annotations
 import sys, pathlib
-sys.path.append(str(pathlib.Path(__file__).resolve().parent.parent))
+# Add repo root to Python path so imports work the same everywhere
+sys.path.append(str(pathlib.Path(__file__).resolve().parent))
+
 import tempfile
 import pandas as pd
-from pathlib import Path
 import streamlit as st
-from . import html_ingest, vectorstores, qa
+
+import html_ingest, vectorstores, qa    # <-- NO leading dot
 
 st.set_page_config(page_title="Spine Copilot – OpenAI", page_icon="🏃‍♂️")
 st.title("🏔️ Summer Spine Copilot (OpenAI)")
